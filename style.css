@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  color: #fff; 
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: auto;
+  padding: 10px;
+}
+
+
+.nav {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; 
+  background-color: #009688; 
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff; 
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.text {
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 38px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  margin: 20px auto;
+
+}
+
+.movie {
+  width: calc(33% - 20px); 
+  margin-bottom: 40px; 
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #ddd; 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.movie img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.movie-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.movie-content a{
+  color: black;
+  
+}
+
+.about {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-image: url("movie-background-collage_23-2149876003.jpg");
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about h2 {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 38px;
+  margin-bottom: 20px; 
+}
+
+.about p, .about li {
+  color: aliceblue;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about ul {
+  margin-left: 20px; 
+}
+
+
+.now-playing {
+  margin: 40px ;
+}
+
+.now-playing h2 {
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.movies {
+  display: flex;
+  margin: 120px;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  
+}
+
+.movie1 {
+  width: 380px;
+  text-align: center;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #ddd;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7); 
+  overflow: hidden; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie1:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2); 
+
+}
+
+.movie1 img {
+  width: 350px;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+
+.movie1 p {
+  color: #666;
+  margin-top: 10px;
+  font-size: 29px;
+}
+
+
+.coming-soon {
+  margin: 40px;
+  margin-top: 0px;
+}
+
+.coming-soon h2 {
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 315px;
+}
+
+.video p {
+  color: #666;
+  font-size: 28px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+h2, h3 {
+  animation: fade-in 1.5s ease forwards;
+  text-align: center;
+}

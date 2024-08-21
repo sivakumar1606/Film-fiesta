@@ -1,0 +1,68 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        background-image: url('./film-background-1334067869u9d.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+
+   
+    .nav {
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav a {
+        color: #fff; 
+        text-decoration: none; 
+        margin: 0 10px; 
+        font-size: 30px; 
+    }
+
+    .nav a:hover {
+        text-decoration: underline; 
+    }
+
+
+    .title {
+        text-align: center;
+        margin-top: 200px; 
+    }
+
+@keyframes textLogoAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.title h1 {
+    font-size: 200px; 
+    color: #fff; 
+    text-decoration: underline; 
+    font-family: 'Times New Roman', Times, serif;
+    animation: textLogoAnimation 2s;
+}
+
+.title h3 {
+    margin-top: 20px;
+    font-size: 60px; 
+    color: #fff; 
+    opacity: 0; 
+    animation: fadeInAnimation 3s ease forwards; /* Apply fade-in animation */
+}
+
+
